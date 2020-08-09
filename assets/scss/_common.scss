@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: $font-size;
+    font-family: $font-main;
+    color: $color-gray;
+    overflow-y: scroll;;
+}
+h1 {
+    font-family: $font-header;
+    
+}
+h2 {}
+
+p {}
+
+a {
+  text-decoration: none;
+  color: $color-light;
+}
+input {}
+
+.btn,
+.btn-accent {
+    
+    display: block;
+    padding: 18px 20px;
+    font-size: 1.125rem;
+    text-align: center;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+}
+ .btn {
+    border: 2px solid $color-light;
+    background-color: rgba($color-light, 0.1);
+    min-width: 250px;
+}
+.btn-accent {
+    
+    border: 2px solid $color-primary;
+    background-color: rgba($color-primary, 0.8);
+    min-width: 350px;
+}
+.btn:hover,
+.btn:focus {
+    background-color: $color-accent;
+   
+}
+.btn-accent:hover,
+.btn-accent:focus {
+    background-color: $color-accent;
+}

@@ -1,0 +1,72 @@
+.skill-item {
+    background-color: #2d3651;
+    min-height: calc(33.333vh - 13.333px);
+    position: relative;
+    overflow: hidden; /*При навидении курсора на ссылку кортинку, скрывает края кортинки выходяшие за края контейнера*/
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #2d3651;
+        opacity: 0.8; /* прозрачность 80%*/
+        z-index: 1;
+        transition: 0.5s;      
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-position: 50% 50%;
+        background-size: cover;
+        transition: 0.5s;   
+    }
+
+    &__title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        margin: 0;
+    }
+
+    &__link {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        letter-spacing: 0.1em;
+        transition: 0.5s;    
+    }
+
+    &:hover {
+        .skill-item__overlay {
+            background-color: #2d3651;
+            opacity: 0.95 !important;
+            transition: 0.5s;
+        }
+
+        .skill-item__image { 
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        .skill-item__link {
+            color: #d46925;
+            transition: 0.5s;
+        }
+    }       
+  }
+  
+  
+  

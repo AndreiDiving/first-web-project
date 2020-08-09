@@ -1,0 +1,72 @@
+
+@import "../../libs/normalize-scss/sass/normalize/import-now";
+@import "skin";
+@import "variables";
+@import "mixins";
+@import "mixins-media";
+@import "extends";
+
+@import "common";
+@import "header/header";
+@import "header/header-overlay";
+@import "header/header-menu";
+@import "header/header-logo";
+@import "header/header-navbar";
+@import "header/header-content";
+
+@import "sections/section-skills/skills";
+@import "sections/section-skills/skills-item";
+@import "sections/section-skills/skill-item-nth";
+@import "sections/section-about";
+@import "sections/section-form";
+@import "sections/section-posts";
+
+@import "footer";
+
+
+ 
+
+/*Оформление навыков*/
+
+
+
+  /*.skills-btn {
+    display: block;
+    margin: 20px;
+  padding: 18px 20px;
+  font-size: 1.125rem;
+  border: 2px solid #2d3651;
+  background-color: rgba(45, 54, 81, 0.8);
+  min-width: 350px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  transition: 0.5s;
+  }
+  .skills-btn:hover {
+    background-color: #d66926;
+    transition: 0.5s;
+  } */
+@media(min-width: 992px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  .header-content__title {
+    margin: 0 0 53px 0;
+  }
+}
+@media (max-width: 991px) and (max-width: 768px) {
+  h1 {
+     font-size: 2.5rem;
+  }
+  .header-content__title {
+    margin: 0 0 43px 0;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.185rem;
+  }
+  .header-content__title {
+    margin: 0 0 33px 0;
+  }
+}

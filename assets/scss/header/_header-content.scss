@@ -1,0 +1,23 @@
+.header-content {
+    position: relative; /*выносим поверх всех слоев*/
+    width: 100%;
+
+    &__title {
+      color: #ffffff;  
+      text-align: center;
+      letter-spacing: 0.079em;
+      font-weight: 300;
+      line-height: 1.2;
+      padding-right: 22px;    
+   }
+   &__buttons {
+      display: flex;
+      justify-content: center;
+      padding-right: 20px;
+      .btn:first-of-type {
+         margin-right: 20px;
+      }
+   }  
+}
+
+ 
