@@ -1,5 +1,5 @@
 .skill-item {
-    background-color: #2d3651;
+    background-color: $color-primary;
     min-height: calc(33.333vh - 13.333px);
     position: relative;
     overflow: hidden; /*При навидении курсора на ссылку кортинку, скрывает края кортинки выходяшие за края контейнера*/
@@ -10,7 +10,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #2d3651;
+        background-color: $color-primary;
         opacity: 0.8; /* прозрачность 80%*/
         z-index: 1;
         transition: 0.5s;      
@@ -51,7 +51,7 @@
 
     &:hover {
         .skill-item__overlay {
-            background-color: #2d3651;
+            background-color: $color-primary;
             opacity: 0.95 !important;
             transition: 0.5s;
         }
@@ -62,7 +62,7 @@
         }
 
         .skill-item__link {
-            color: #d46925;
+            color: $color-accent;
             transition: 0.5s;
         }
     }       
