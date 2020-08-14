@@ -46,27 +46,5 @@
     background-color: #d66926;
     transition: 0.5s;
   } */
-@media(min-width: 992px) {
-  h1 {
-    font-size: 3.75rem;
-  }
-  .header-content__title {
-    margin: 0 0 53px 0;
-  }
-}
-@media (max-width: 991px) and (max-width: 768px) {
-  h1 {
-     font-size: 2.5rem;
-  }
-  .header-content__title {
-    margin: 0 0 43px 0;
-  }
-}
-@media (max-width: 767px) {
-  h1 {
-    font-size: 1.185rem;
-  }
-  .header-content__title {
-    margin: 0 0 33px 0;
-  }
-}
+
+

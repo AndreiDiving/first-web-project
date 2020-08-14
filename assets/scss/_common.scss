@@ -7,8 +7,28 @@ html {
     color: $color-gray;
     overflow-y: scroll;;
 }
+
+
+
 h1 {
     font-family: $font-header;
+
+    @include lg-min {
+        font-size: 3.75rem;
+        
+    }
+
+    @include lg-md {
+        font-size: 2.5rem;
+        
+    }
+    
+    @include md {
+        font-size: 1.185rem;
+        
+    }
+    
+
     
 }
 h2 {}

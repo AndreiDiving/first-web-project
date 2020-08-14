@@ -8,15 +8,34 @@
       letter-spacing: 0.079em;
       font-weight: 300;
       line-height: 1.2;
-      padding-right: 22px;    
+      padding-right: 22px;  
+      
+
+      @include lg-min {
+         margin: 0 0 53px 0;
+      }
+      
+      @include lg-md {
+         margin: 0 0 43px 0;
+      }
+      
+      @include md {
+         margin: 0 0 33px 0;
+      }
+      
    }
+
    &__buttons {
       display: flex;
       justify-content: center;
       padding-right: 20px;
+      
       .btn:first-of-type {
          margin-right: 20px;
       }
+   }
+   &__container {
+      @extend %container;
    }  
 }
 

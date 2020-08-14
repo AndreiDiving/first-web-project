@@ -4,37 +4,32 @@
     position: relative;
     overflow: hidden; /*При навидении курсора на ссылку кортинку, скрывает края кортинки выходяшие за края контейнера*/
 
-    &__overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
+    &__overlay {  
         background-color: $color-primary;
         opacity: 0.8; /* прозрачность 80%*/
         z-index: 1;
-        transition: 0.5s;      
+        transition: 0.5s; 
+
+        @include abs-position;     
     }
 
     &__image {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
+        @include abs-position;
+
         background-position: 50% 50%;
         background-size: cover;
-        transition: 0.5s;   
+        transition: 0.5s;
+        
+        
     }
 
     &__title {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
+        @include abs-position;
+        
         z-index: 2;
         margin: 0;
+
+        
     }
 
     &__link {
