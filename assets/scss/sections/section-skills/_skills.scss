@@ -1,47 +1,46 @@
 .skills {
+    
+  @include sm-min {
     padding: $gap / 2;
     margin-bottom: $gap / 2 * 3;
+  }
 
-    @include sm-min {
-      padding: $gap;
+  @include sm {
+    padding: $gap;
+  }
+
+  &__container{
+    margin-bottom: $gap;
+    display: grid;
+      
+
+    @include lg-min {
+      grid-gap: $gap / 2;
+      grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+      /*grid-template-rows: 33vh 33vh 33vh; /* или можно так: repeat(3, 33vh)*/
+    }
+
+    @include lg-md {
+      grid-gap: $gap / 2;
+      grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";  
+    }
+
+     @include md-sm {
+      grid-gap: $gap / 2;
+      grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";  
     }
 
     @include sm {
-      padding: $gap / 2;
-    }
-
-    &__container{
-      margin-bottom: 20px;
-      display: grid;
-      
-
-      @include lg-min {
-        grid-gap: $gap / 2;
-        grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
-        /*grid-template-rows: 33vh 33vh 33vh; /* или можно так: repeat(3, 33vh)*/
-      }
-
-      @include lg-md {
-        grid-gap: $gap / 2;
-        grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";  
-      }
-
-      @include md-sm {
-        grid-gap: $gap / 2;
-        grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";  
-      }
-
-      @include sm {
-        grid-gap: $gap;
-        grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";  
-      }
-    }
-
-    &__button {  
-      display: flex;
-      justify-content: center;   
+      grid-gap: $gap;
+      grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";  
     }
   }
+
+  &__button {  
+    display: flex;
+    justify-content: center;   
+  }
+}
 
   
   

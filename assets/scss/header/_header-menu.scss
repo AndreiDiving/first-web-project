@@ -2,12 +2,20 @@
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 1;
+  
+  @include md {
+    background-color: rgba($color: $color-gray-dark, $alpha: 0.25);
+  }
+  
+  
     
   &__container {
     display: flex;
     align-items: center;
 
     @extend %container;
+    //grid-template-columns: auto 1fr;
   }   
 }
 
