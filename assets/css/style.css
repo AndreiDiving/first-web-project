@@ -493,6 +493,7 @@ h2 {
   color: #2d3651;
   letter-spacing: 0.1em;
   margin: 0 0 56px  0;
+  line-height: 1.2em;
 }
 
 a {
@@ -933,6 +934,40 @@ a {
   display: grid;
   grid-template-columns: 1fr 271px;
   grid-gap: 100px;
+  letter-spacing: 0.055em;
+}
+
+.about__container__content {
+  /*p::aftr {
+                width: 2px;
+                height: 200px;
+                background-color: red;
+                z-index: 3;
+            }*/
+}
+
+.about__container__content p {
+  font-size: 1.125rem;
+}
+
+.about__container__content p:first-of-type {
+  margin-top: -5px;
+}
+
+.about__container__content p:last-of-type {
+  margin: 0;
+}
+
+.about__container__image {
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+}
+
+.about__container__image img {
+  max-width: 100%;
+  max-height: 480px;
 }
 
 /*Оформление навыков*/
@@ -994,6 +1029,22 @@ a {
     /*grid-template-rows: 33vh 33vh 33vh; /* или можно так: repeat(3, 33vh)*/
   }
 }
+@media (max-width: 991.8px) {
+  h2 {
+    margin-bottom: 42px;
+    font-size: 2rem;
+  }
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .about__container {
+    grid-gap: 40px;
+  }
+  .about__container__content p {
+    font-size: 16px;
+  }
+}
 @media (max-width: 991.8px) and (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
@@ -1014,6 +1065,10 @@ a {
 @media (max-width: 767.8px) {
   h1 {
     font-size: 1.185rem;
+  }
+  h2 {
+    margin-bottom: 36px;
+    font-size: 1.5rem;
   }
   .btn {
     min-width: 170px;
@@ -1037,6 +1092,14 @@ a {
   .header-content__title {
     margin: 0 0 33px 0;
   }
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .about__container {
+    grid-gap: 20px;
+    grid-template-columns: 1fr 236px;
+  }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
   .skills__container {
@@ -1045,6 +1108,11 @@ a {
   }
 }
 @media (max-width: 575.8px) {
+  h2 {
+    margin-bottom: 36px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
   .btn-accent {
     width: 100%;
   }
@@ -1066,5 +1134,14 @@ a {
   .skills__container {
     grid-gap: 20px;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+  }
+  .about {
+    padding: 60px 0;
+  }
+  .about__container {
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }

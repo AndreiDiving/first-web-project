@@ -2,17 +2,73 @@
     background-color: $color-gray-light;
     padding: $gap * 5 $gap;
 
+    @include lg {
+        padding-top:80px;
+        padding-bottom: 80px;;
+    }
+    @include md {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include sm {
+        padding: 60px 0;
+    }
+
+
 
 
     &__container {
         display: grid;
         grid-template-columns: 1fr 271px;
         grid-gap: 100px;
+        letter-spacing: 0.055em;
+
+        @include lg {
+            grid-gap: 40px;
+        }
+
+        @include md{
+            grid-gap: 20px;
+            grid-template-columns: 1fr 236px;
+        }
+        @include sm {
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
 
         &__content {
-            
+            p {
+                font-size: 1.125rem;
+                
+                
+                @include lg {
+                    font-size: 16px;
+                }
+            }
+            p:first-of-type {
+                margin-top: -5px;
+            }
+            p:last-of-type {
+                margin: 0;
+            }
+            /*p::aftr {
+                width: 2px;
+                height: 200px;
+                background-color: red;
+                z-index: 3;
+            }*/
         }
         &__image {
+            display: grid;
+            align-content: center;
+            justify-items: center;
+
+            img {
+                max-width: 100%;
+                max-height: 480px;
+            }
 
         }
 

@@ -37,10 +37,29 @@ h2 {
     color: $color-primary;
     letter-spacing: 0.1em;
     margin:0 0 56px  0;
+    line-height: 1.2em;
+
+    @include lg {
+    
+        margin-bottom: 42px;
+        font-size: 2rem;
+    }
+
+    @include md {
+        margin-bottom: 36px;
+        font-size: 1.5rem;
+    }
+
+    @include sm {
+        margin-bottom: 36px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
 }
 
 
 p {}
+
 
 a {
   text-decoration: none;
