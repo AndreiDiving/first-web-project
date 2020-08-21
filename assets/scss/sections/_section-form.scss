@@ -71,6 +71,7 @@
         border-color: rgba($color-light, 0);
         border-bottom-color: rgba($color-light, 0.2);
         background-color: rgba($color-light, 0.1);
+        min-width: 0;
 
         &:hover,
         &:focus {

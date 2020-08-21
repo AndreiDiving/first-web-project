@@ -1,0 +1,42 @@
+.posts {
+    
+    @include lg-min {
+        padding-top: $gap * 5;
+        padding-bottom: $gap * 5;
+    }
+
+    @include lg-md {
+        padding-top:80px;
+        padding-bottom: 80px;
+    }
+
+    @include md {
+        padding-top:60px;
+        padding-bottom: 60px;
+    }
+
+    &-container {
+        max-width: 1340px;
+        margin: auto;
+        padding-right: $gap;
+        padding-left: $gap;
+
+        &__grid {
+            display: grid;
+            grid-gap: $gap;
+            padding-bottom: $gap;
+
+            
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+        @include lg-min {
+
+        }
+    }
+
+
+
+}
