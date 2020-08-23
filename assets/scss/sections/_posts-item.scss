@@ -67,10 +67,10 @@
     &:hover {
         background-color: #d8d8d8;
         h3 {
-            color: #2d3651;
+            color: $color-primary;
         }
         p {
-            color: #2d3651;
+            color: $color-primary;
         }
         
         .posts-item__link__img img {

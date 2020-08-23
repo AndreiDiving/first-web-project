@@ -2,7 +2,7 @@
     
   @include sm-min {
     padding: $gap / 2;
-    margin-bottom: $gap / 2 * 3;
+    padding-bottom: $gap * 2 ;
   }
 
   @include sm {

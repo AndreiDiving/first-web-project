@@ -2,5 +2,11 @@
     max-width: 1340px;
     margin: auto;
     padding-left: $gap;
-    padding-right: 0px;
+    padding-right: 0;
+}
+%container2 {
+    max-width: 1340px;
+    margin: auto;
+    padding-left: $gap;
+    padding-right: $gap;
 }

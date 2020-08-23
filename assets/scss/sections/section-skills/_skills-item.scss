@@ -1,6 +1,6 @@
 .skill-item {
     background-color: $color-primary;
-    min-height: calc(33.333vh - 13.333px);
+    min-height: calc(33.333vh - 20px * 0.66);
     position: relative;
     overflow: hidden; /*При навидении курсора на ссылку кортинку, скрывает края кортинки выходяшие за края контейнера*/
 
@@ -28,6 +28,10 @@
         
         z-index: 2;
         margin: 0;
+
+        @include md-max {
+            font-size: 1.25rem;
+        }
 
         
     }
