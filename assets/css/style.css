@@ -785,7 +785,7 @@ a {
 
 .skill-item {
   background-color: #2d3651;
-  min-height: calc(33.333vh - 13.333px);
+  min-height: 226px;
   position: relative;
   overflow: hidden;
   /*При навидении курсора на ссылку кортинку, скрывает края кортинки выходяшие за края контейнера*/
@@ -827,6 +827,9 @@ a {
   bottom: 0;
   z-index: 2;
   margin: 0;
+  /*@include md-max {
+            font-size: 1.25rem;
+        }*/
 }
 
 .skill-item__link {
@@ -1281,7 +1284,7 @@ a {
   .skills__container {
     grid-gap: 10px;
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
-    /*grid-template-rows: 33vh 33vh 33vh; /* или можно так: repeat(3, 33vh)*/
+    grid-template-columns: repeat(4, 1fr);
   }
   .about {
     padding-top: 100px;
@@ -1330,6 +1333,7 @@ a {
   .skills__container {
     grid-gap: 10px;
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+    grid-template-columns: repeat(3, 1fr);
   }
   .form__container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -1373,9 +1377,6 @@ a {
   .header-content__title {
     margin: 0 0 33px 0;
   }
-  .skill-item__title {
-    font-size: 1.25rem;
-  }
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1393,6 +1394,7 @@ a {
   .skills__container {
     grid-gap: 10px;
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+    grid-template-columns: 1fr 1fr;
   }
   .form-item:nth-of-type(1) {
     grid-column: 1 / span 2;
@@ -1432,6 +1434,7 @@ a {
   .skills__container {
     grid-gap: 20px;
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+    grid-template-columns: 1fr;
   }
   .about {
     padding: 60px 0;
