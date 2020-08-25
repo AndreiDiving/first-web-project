@@ -753,10 +753,10 @@ a {
 .header-content__title {
   color: #ffffff;
   text-align: center;
-  letter-spacing: 0.079em;
+  letter-spacing: 0.08em;
   font-weight: 300;
   line-height: 1.2;
-  padding-right: 22px;
+  padding-right: 20px;
 }
 
 .header-content__buttons {
@@ -785,7 +785,7 @@ a {
 
 .skill-item {
   background-color: #2d3651;
-  min-height: 226px;
+  min-height: calc(239px - 20px * 0.66);
   position: relative;
   overflow: hidden;
   /*При навидении курсора на ссылку кортинку, скрывает края кортинки выходяшие за края контейнера*/
@@ -827,9 +827,6 @@ a {
   bottom: 0;
   z-index: 2;
   margin: 0;
-  /*@include md-max {
-            font-size: 1.25rem;
-        }*/
 }
 
 .skill-item__link {
@@ -1017,22 +1014,61 @@ a {
   height: 60px;
   padding-right: 30px;
   padding-left: 30px;
+  color: #2d3651;
   border: 2px solid rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0.05);
   border-bottom-color: rgba(255, 255, 255, 0.25);
   letter-spacing: 0.15em;
-  color: #ffffff;
   font-size: 1.125rem;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 
+.form-item__input::-webkit-input-placeholder {
+  color: #65728d;
+}
+
+.form-item__input::-moz-placeholder {
+  color: #65728d;
+}
+
+.form-item__input:-ms-input-placeholder {
+  color: #65728d;
+}
+
+.form-item__input::-ms-input-placeholder {
+  color: #65728d;
+}
+
+.form-item__input::placeholder {
+  color: #65728d;
+}
+
 .form-item__input:hover, .form-item__input:focus {
-  color: rgba(255, 255, 255, 0.15);
   border-color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #ffffff;
+}
+
+.form-item__input:hover::-webkit-input-placeholder, .form-item__input:focus::-webkit-input-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:hover::-moz-placeholder, .form-item__input:focus::-moz-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:hover:-ms-input-placeholder, .form-item__input:focus:-ms-input-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:hover::-ms-input-placeholder, .form-item__input:focus::-ms-input-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:hover::placeholder, .form-item__input:focus::placeholder {
+  color: #8c9bab;
 }
 
 .form .btn-accent {
@@ -1349,7 +1385,7 @@ a {
 }
 @media (max-width: 767.8px) {
   h1 {
-    font-size: 1.185rem;
+    font-size: 1.875rem;
   }
   h2 {
     margin-bottom: 36px;
@@ -1375,7 +1411,10 @@ a {
     background-color: rgba(68, 89, 110, 0.9);
   }
   .header-content__title {
-    margin: 0 0 33px 0;
+    margin: 0 0 43px 0;
+  }
+  .skill-item__link {
+    font-size: 1.125rem;
   }
   .about {
     padding-top: 60px;

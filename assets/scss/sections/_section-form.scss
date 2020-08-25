@@ -43,23 +43,31 @@
         padding-right: 30px;
         padding-left: 30px;
 
+        color: $color-primary;
         border: 2px solid rgba($color-light, 0);
         background-color: rgba($color-light, 0.05);
         border-bottom-color: rgba($color-light, 0.25);
         
         
         letter-spacing: 0.15em;
-        color: $color-light;
+        
         font-size: 1.125rem;
         transition: 0.5s;
+        
+        &::placeholder {
+            color: #65728d;
+        }
 
         &:hover,
         &:focus {
-            color: rgba($color-light, 0.15);
+            
             border-color: rgba($color-light, 0.15);
             background-color: rgba($color-light, 0.15);
             border-bottom-color: $color-light;
 
+            &::placeholder {
+                color: #8c9bab;
+            }
         }
         
     }
