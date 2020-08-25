@@ -43,7 +43,7 @@
         padding-right: 30px;
         padding-left: 30px;
 
-        color: $color-primary;
+        color: $color-light;
         border: 2px solid rgba($color-light, 0);
         background-color: rgba($color-light, 0.05);
         border-bottom-color: rgba($color-light, 0.25);
@@ -57,6 +57,7 @@
         &::placeholder {
             color: #65728d;
         }
+        
 
         &:hover,
         &:focus {
